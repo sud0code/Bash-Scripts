@@ -1,6 +1,6 @@
-# **Encrypt/Decrypt file on Linux**
+# **Backup file to remote server**
 
-This script is a wrapper for GPG commands used for encrypting and decrypting individual files on Linux.
+This script is a wrapper for Rsync command used for incremental backup of files to a remote server.
 
 ------
 
@@ -9,7 +9,7 @@ This script is a wrapper for GPG commands used for encrypting and decrypting ind
 Simply run: 
 
 ```shell
-$ ./encrypt-decrypt.sh
+$ ./backup-remote.sh
 ```
 
 and follow the onscreen prompts.
@@ -18,5 +18,5 @@ and follow the onscreen prompts.
 
 ## Dependencies:
 
-[GPG](https://gnupg.org/) - The free implementation of PGP. (Preinstalled in all modern Linux distros)
+[Rsync](https://rsync.samba.org/) - Utility for  synchronizing files between a computer and an external hard drive and across networked computers. (Preinstalled in all modern Linux distros)
 
