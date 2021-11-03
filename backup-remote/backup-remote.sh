@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Enter file to path for backup: " 
+echo "Enter file with path for backup: " 
 read -r file
 
 echo ""
@@ -13,10 +13,6 @@ echo ""
 echo "Enter backup location on remote server: "
 read -r location
 
-echo "Do you wish to backup again to the same server and location? "
-read -r resp0
 
-echo "Do you wish to enable periodic backup to remote server? "
-read -r resp1
+rsync -avz -e ssh $file $server:$location/$(date)
 
-echo ""
